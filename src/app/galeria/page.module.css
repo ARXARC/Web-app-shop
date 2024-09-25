@@ -1,0 +1,62 @@
+.header {
+  display: flex; /* Diseño flexible */
+  flex-direction: row; /* Orientación horizontal */
+  justify-content: center; /* Centrar contenido */
+  height: 100vh; /* Altura 100% de la ventana */
+  font-weight: bold; /* Texto en negrita */
+  color: #ffffff; /* Color del texto en blanco */
+  text-shadow: 15px 15px #222; /* Efecto de sombra en el texto */
+  font-size: 80px; /* Tamaño de fuente */
+}
+/* Alinea elementos <div> dentro de .header verticalmente */
+.header div {
+  display: flex; /* Diseño flexible */
+  flex-direction: column; /* Orientación vertical */
+  justify-content: center; /* Centrar contenido verticalmente */
+}
+.yellowText {
+  color: goldenrod; /* Color dorado */
+}
+
+.infoSection {
+  display: flex; /* Diseño flexible */
+  flex-direction: row; /* Orientación horizontal */
+  justify-content: center; /* Centrar contenido */
+  height: 100vh; 
+  align-items: center;
+}
+
+.infoContainer{
+  color : white;
+  margin-left: 40px;
+}
+
+.infoContainer.title {
+font-size: 60px;
+font-weight: bold;
+}
+
+.infoContainer.list {
+  margin-top: 30px;
+}
+
+.infoConatianer.list ul {
+  padding-left: 20px;
+}
+
+.infoContainer .list ul li {
+  margin-bottom: 20px;
+  list-style: disc;
+}
+
+.grayText {
+  color: gray
+}
+
+.image{
+max-width: 75%;
+height: 50vh;
+border-radius: 20%;
+box-shadow: 0px 0px 10pz rgba(0, 0, 0, 0.2);
+
+}

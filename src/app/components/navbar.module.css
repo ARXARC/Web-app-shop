@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    background-color: black;
+    height: 80px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbarItem {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+}
+
+.selected {
+    border-color: #daa520;
+
+}
