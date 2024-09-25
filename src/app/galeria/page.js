@@ -9,7 +9,8 @@ export default function Home() {
       <header id="header" className={styles.header}>
       <img src="bat.jpg" alt="Imagen" className={styles.image} />
         <img src="fuerte.jpg" alt="Imagen" className={styles.image} />
-        <img src="guerra.webp" alt="Imagen" className={styles.image} />
+      
+      +  <img src="guerra.webp" alt="Imagen" className={styles.image} />
       </header>
     </main>
   );

@@ -5,35 +5,38 @@ import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <main>
-      <Navbar></Navbar>
-      <header id="header" className={styles.header}>
-        <img
-          src="imagen-para-website.jpg"
-          alt="Imagen"
-          className={styles.image}
-        />
-        <div className={styles.infoContainer}>
-          <span className={styles.title + "" + styles.yellowText}>Maxcimiliano</span>
-          <br />
-          <span className={styles.title}> Morales</span>
-          <div className={styles.list}>
-            <ul>
-              <li>
-                <span className={styles.grayText} >age:</span> 16
-              </li>
-              <li>
-                <span className={styles.grayText} >Nationality:</span> Guatemalteco</li>
-              <li>
-                <span className={styles.grayText} >Skill set:</span> Project Management and Financial Performance</li>
-              <li>
-                <span className={styles.grayText} >Langages:</span> English, German and spanish</li>
+      <div className={styles.backgroundImage}>
+        <Image src="/fondo.jpg" layout="fill" objectFit="cover" />
+      </div>
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <header id="header" className={styles.header}>
+          <img
+            src="fondo.jpg"
+            alt="Imagen"
+            className={styles.image}
+          />
+          <div className={styles.infoContainer}>
+            <span className={styles.title + " " + styles.yellowText}></span>
+            <br />
+            <span className={styles.title}></span>
+            <div className={styles.list}>
+              <ul>
 
-            </ul>
+                <li>
+                  <span className={styles.grayText}>Phone:</span> 12345678
+                </li>
+                <li>
+                  <span className={styles.grayText}>Email:</span> saborEsquina@google.com
+                </li>
+                <li>
+                  <span className={styles.grayText}>Facebook:</span> esquinasabor
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        
-      </header>
+        </header>
+        <Navbar style={{ position: 'relative', bottom: 0, left: '50%', transform: 'translateX(-50%)', textAlign: 'center' }} />
+      </div>
     </main>
   );
 }
