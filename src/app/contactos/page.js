@@ -7,21 +7,6 @@ export default function Home() {
     <main>
       <Navbar></Navbar>
       <header id="header" className={styles.header}>
-        <div>
-          <h1>
-            <span>
-              Hello<span className={styles.yellowText}>.</span>
-            </span>
-            <br />
-            <span>
-              <span>I am</span>
-            </span>
-            <br />
-            <span>Maxcimiliano Morales</span>
-          </h1>
-        </div>
-      </header>
-      <section id="info" className={styles.infoSection}>
         <img
           src="imagen-para-website.jpg"
           alt="Imagen"
@@ -47,13 +32,8 @@ export default function Home() {
           </div>
         </div>
 
-      </section>
-
-      <section id="info" className={styles.infosection}>
-        <img src="bat.jpg" alt="Imagen" className={styles.image} />
-        <img src="fuerte.jpg" alt="Imagen" className={styles.image} />
-        <img src="guerra.webp" alt="Imagen" className={styles.image} />
-      </section>
+        
+      </header>
     </main>
   );
 }
