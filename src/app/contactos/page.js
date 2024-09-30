@@ -5,13 +5,14 @@ import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <main>
+      <Navbar style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', textAlign: 'center', width: '100%' }} />
       <div className={styles.backgroundImage}>
         <Image src="/fondo.jpg" layout="fill" objectFit="cover" />
       </div>
       <div style={{ position: 'relative', zIndex: 1 }}>
         <header id="header" className={styles.header}>
           <img
-            src="fondo.jpg"
+            src="mc.png"
             alt="Imagen"
             className={styles.image}
           />
@@ -21,21 +22,28 @@ export default function Home() {
             <span className={styles.title}></span>
             <div className={styles.list}>
               <ul>
-
                 <li>
-                  <span className={styles.grayText}>Phone:</span> 12345678
+                  <span>Phone:</span> 555-1234
                 </li>
                 <li>
-                  <span className={styles.grayText}>Email:</span> saborEsquina@google.com
+                  <span>Email:</span> contacto@saborEsquina.com
                 </li>
                 <li>
-                  <span className={styles.grayText}>Facebook:</span> esquinasabor
+                  <span>Facebook:</span> esquinasabor
+                </li>
+                <li>
+                  <span>Instagram:</span> esquinasabor
+                </li>
+                <li>
+                  <span>Twitter:</span> esquinasabor
+                </li>
+                <li>
+                  <span>Dirección:</span> Av. Principal 123, Ciudad, País
                 </li>
               </ul>
             </div>
           </div>
         </header>
-        <Navbar style={{ position: 'relative', bottom: 0, left: '50%', transform: 'translateX(-50%)', textAlign: 'center' }} />
       </div>
     </main>
   );
