@@ -5,55 +5,47 @@ import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <main>
-      <Navbar></Navbar>
-      <header id="header" className={styles.header}>
-        <div>
-          <h1>
-            <span>
-              Hello<span className={styles.yellowText}>.</span>
-            </span>
-            <br />
-            <span>
-              <span>I am</span>
-            </span>
-            <br />
-            <span>Maxcimiliano Morales</span>
-          </h1>
-        </div>
-      </header>
-      <section id="info" className={styles.infoSection}>
-        <img
-          src="imagen-para-website.jpg"
-          alt="Imagen"
-          className={styles.image}
-        />
-        <div className={styles.infoContainer}>
-          <span className={styles.title + "" + styles.yellowText}>Maxcimiliano</span>
-          <br />
-          <span className={styles.title}> Morales</span>
-          <div className={styles.list}>
-            <ul>
-              <li>
-                <span className={styles.grayText} >age:</span> 16
-              </li>
-              <li>
-                <span className={styles.grayText} >Nationality:</span> Guatemalteco</li>
-              <li>
-                <span className={styles.grayText} >Skill set:</span> Project Management and Financial Performance</li>
-              <li>
-                <span className={styles.grayText} >Langages:</span> English, German and spanish</li>
-
-            </ul>
+      <Navbar style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', textAlign: 'center', width: '100%' }} />
+      <div className={styles.backgroundImage}>
+        <Image src="/fondo.jpg" layout="fill" objectFit="cover" />
+      </div>
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <header id="header" className={styles.header}>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="1.png" alt="Imagen 1" style={{ width: '400px', height: '400px' }} />
+              <img src="2.png" alt="Imagen 2" style={{ width: '400px', height: '400px' }} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="3.png" alt="Imagen 3" style={{ width: '400px', height: '400px' }} />
+              <img src="4.png" alt="Imagen 4" style={{ width: '400px', height: '400px' }} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="5.png" alt="Imagen 5" style={{ width: '400px', height: '400px' }} />
+              <img src="6.png" alt="Imagen 6" style={{ width: '400px', height: '400px' }} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="7.png" alt="Imagen 7" style={{ width: '400px', height: '400px' }} />
+              <img src="8.png" alt="Imagen 8" style={{ width: '400px', height: '400px' }} />
+            </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="9.png" alt="Imagen 9" style={{ width: '400px', height: '400px' }} />
+              <img src="10.png" alt="Imagen 10" style={{ width: '400px', height: '400px' }} />
+            
           </div>
-        </div>
-
-      </section>
-
-      <section id="info" className={styles.infosection}>
-        <img src="bat.jpg" alt="Imagen" className={styles.image} />
-        <img src="fuerte.jpg" alt="Imagen" className={styles.image} />
-        <img src="guerra.webp" alt="Imagen" className={styles.image} />
-      </section>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="1.png" alt="Imagen 1" style={{ width: '400px', height: '400px' }} />
+              <img src="2.png" alt="Imagen 2" style={{ width: '400px', height: '400px' }} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <img src="3.png" alt="Imagen 3" style={{ width: '400px', height: '400px' }} />
+              <img src="4.png" alt="Imagen 4" style={{ width: '400px', height: '400px' }} />
+            </div>
+            </div>
+        </header>
+      </div>
     </main>
   );
 }
