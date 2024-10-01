@@ -5,7 +5,7 @@
   height: 100vh; /* Altura 100% de la ventana */
   font-weight: bold; /* Texto en negrita */
   color: #ffffff; /* Color del texto en blanco */
-  text-shadow: 15px 15px #222; /* Efecto de sombra en el texto */
+  text-shadow: 5px 5px #222; /* Efecto de sombra en el texto */
   font-size: 80px; /* Tamaño de fuente */
 }
 /* Alinea elementos <div> dentro de .header verticalmente */
